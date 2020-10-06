@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.morrigan.dev.common</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>de.morrigan.dev.ai</groupId>
+	<artifactId>janina-zero-build</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>janina-zero-build</name>
+	<description>Build-Projekt für das J.a.n.i.n.a-Zero Projekt</description>
+
+	<developers>
+		<developer>
+			<id>morrigan-dev</id>
+			<name>Morrigan</name>
+			<timezone>GMT+1</timezone>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>../janina-zero-world</module>
+	</modules>
+</project>
