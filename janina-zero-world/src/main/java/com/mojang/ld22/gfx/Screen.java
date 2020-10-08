@@ -107,7 +107,7 @@ public class Screen {
 				int xd = xx - x; // the horizontal difference between the current pixel and the x position
 				int dist = xd * xd + yd; // squares the distance of xd and adds yd for total distance.
 				if (dist <= r * r) { // if distance is smaller or equal to r (radius) squared then...
-					int br = 255 - dist * 255 / (r * r); // (255 - (distance value * 255) / r²) the area where light will be rendered
+					int br = 255 - dist * 255 / (r * r); // (255 - (distance value * 255) / r^2) the area where light will be rendered
 					if (pixels[xx + yy * w] < br) pixels[xx + yy * w] = br; // If the current pixel is smaller than br, then the pixel will equal br.
 				}
 			}

@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -28,4 +29,33 @@
 	<modules>
 		<module>../janina-zero-world</module>
 	</modules>
+
+	<properties>
+		<!-- Mandatory properties -->
+
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.organization>morrigan-dev</sonar.organization>
+		<sonar.projectKey>morrigan-dev_janina-zero</sonar.projectKey>
+		<!-- Lösung für ein StackOverflowError Problem (siehe: https://community.sonarsource.com/t/stackoverflowerror-at-defaultinputcomponent-equals/20324) -->
+		<sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
+
+		
+		<!-- Optional properties -->
+		<!-- <sonar.buildString> [...] </sonar.buildString> -->
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.sonarsource.scanner.maven</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>3.6.1.1688</version>
+					<configuration>
+						<goalPrefix>sonar</goalPrefix>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>

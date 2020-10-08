@@ -50,7 +50,7 @@ public class AirWizard extends Mob {
 		if (level.player != null && randomWalkTime == 0) { // if there is a player around, and the randomWalkTime is equal to 0
 			int xd = level.player.x - x; // the horizontal distance between the player and the air wizard.
 			int yd = level.player.y - y; // the vertical distance between the player and the air wizard.
-			if (xd * xd + yd * yd < 32 * 32) { // if the x-distance² + y-distance² is smaller than 32² then...
+			if (xd * xd + yd * yd < 32 * 32) { // if the x-distance^2 + y-distance^2 is smaller than 32^2 then...
 				/* Move away from the player */
 				xa = 0; // x acceleration
 				ya = 0; // y acceleration
@@ -58,7 +58,7 @@ public class AirWizard extends Mob {
 				if (xd > 0) xa = -1; // if the xd is more than 0, then increase x acceleration by 1 (negative direction)
 				if (yd < 0) ya = +1; // if the yd is less than 0, then increase y acceleration by 1
 				if (yd > 0) ya = -1; // if the yd is more than 0, then increase y acceleration by 1 (negative direction)
-			} else if (xd * xd + yd * yd > 80 * 80) { // if the x-distance² + y-distance² is smaller than 80² then...
+			} else if (xd * xd + yd * yd > 80 * 80) { // if the x-distance^2 + y-distance^2 is smaller than 80^2 then...
 				/* Move towards from the player */
 				xa = 0; // x acceleration
 				ya = 0; // y acceleration
@@ -81,7 +81,7 @@ public class AirWizard extends Mob {
 				int xd = level.player.x - x; // the horizontal distance between the player and the air wizard.
 				int yd = level.player.y - y; // the vertical distance between the player and the air wizard.
 				
-				/* if a random number (0 to 3) equals 0 and the x-distance² + y-distance² is smaller than 50² then...*/
+				/* if a random number (0 to 3) equals 0 and the x-distance^2 + y-distance^2 is smaller than 50^2 then...*/
 				if (random.nextInt(4) == 0 && xd * xd + yd * yd < 50 * 50) {
 					if (attackDelay == 0 && attackTime == 0) { // if attackDelay & attackTime equal 0, then...
 						attackDelay = 60 * 2; // attackDelay equals 120 (about 2 seconds)

@@ -30,7 +30,7 @@ public class Slime extends Mob {
 					int xd = level.player.x - x; // gets the horizontal distance between the slime and the player
 					int yd = level.player.y - y; // gets the vertical distance between the slime and the player 
 					
-					/* If the horizontal distance² + vertical distance² is smaller than 50² then...*/
+					/* If the horizontal distance^2 + vertical distance^2 is smaller than 50^2 then...*/
 					if (xd * xd + yd * yd < 50 * 50) { // Notch is an evil man who should be punished for this line of code, it seems to test the distance between slime and the player
 						// Why is notch evil for making that line of code? :o -David
 						if (xd < 0) xa = -1; // if the horizontal difference is smaller than 0, then the x acceleration will be 1 (negative direction)
