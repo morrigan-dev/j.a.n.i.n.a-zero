@@ -37,7 +37,4 @@ jobs:
         env:
           ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
           ARTIFACTORY_TOKEN: ${{ secrets.ARTIFACTORY_TOKEN }}
-        run: |
-          less /home/runner/.m2/settings.xml
-          cd janina-zero-build
-          mvn -B deploy --file pom.xml
+        run: mvn -B deploy --file pom.xml
