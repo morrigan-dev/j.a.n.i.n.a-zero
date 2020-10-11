@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>de.morrigan.dev.common</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.3</version>
+		<version>1.0.5</version>
 	</parent>
 
 	<groupId>de.morrigan.dev.ai</groupId>
@@ -16,7 +16,7 @@
 	<packaging>pom</packaging>
 
 	<name>janina-zero-build</name>
-	<description>Build-Projekt für das J.a.n.i.n.a-Zero Projekt</description>
+	<description>Build-Projekt für das Janina-Zero Projekt</description>
 
 	<developers>
 		<developer>
@@ -62,18 +62,18 @@
 		</repository>
 	</repositories>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.sonarsource.scanner.maven</groupId>
-					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.6.1.1688</version>
-					<configuration>
-						<goalPrefix>sonar</goalPrefix>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+<!-- 	<build> -->
+<!-- 		<pluginManagement> -->
+<!-- 			<plugins> -->
+<!-- 				<plugin> -->
+<!-- 					<groupId>org.sonarsource.scanner.maven</groupId> -->
+<!-- 					<artifactId>sonar-maven-plugin</artifactId> -->
+<!-- 					<version>3.6.1.1688</version> -->
+<!-- 					<configuration> -->
+<!-- 						<goalPrefix>sonar</goalPrefix> -->
+<!-- 					</configuration> -->
+<!-- 				</plugin> -->
+<!-- 			</plugins> -->
+<!-- 		</pluginManagement> -->
+<!-- 	</build> -->
 </project>
