@@ -18,14 +18,12 @@
 	<name>janina-zero-build</name>
 	<description>Build-Projekt für das Janina-Zero Projekt</description>
 
-	<developers>
-		<developer>
-			<id>morrigan-dev</id>
-			<name>Morrigan</name>
-			<timezone>GMT+1</timezone>
-		</developer>
-	</developers>
-
+	<scm>
+		<developerConnection>scm:git:https://github.com/morrigan-dev/janina-zero.git</developerConnection>
+		<url>https://github.com/morrigan-dev/janina-zero</url>
+		<tag>HEAD</tag>
+	</scm>
+	
 	<modules>
 		<module>../janina-zero-world</module>
 	</modules>
