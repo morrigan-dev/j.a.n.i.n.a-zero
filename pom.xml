@@ -8,6 +8,7 @@
         <groupId>de.morrigan.dev.ai</groupId>
         <artifactId>janina-zero-build</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>janina-zero-build/pom.xml</relativePath>
 	</parent>
 
 	<groupId>de.morrigan.dev.ai</groupId>
